@@ -2,7 +2,8 @@
 
 def main():
     name = get_name()
-    print(name[1::2])
+    string = get_string(name)
+    print(string)
 
 
 def get_name():
@@ -11,9 +12,14 @@ def get_name():
         name = input('Please enter your name: ')
     return name
 
-name = 'Jared Cooke'
-frequency = int(input('frequency: '))
-s=''
-for i in range(0, len(name), frequency):
-    if i % frequency == 0:
-        s += name(i)
+
+def get_string(string):
+    frequency = int(input('frequency: '))
+    s = ''
+    for i in range(0, len(string), frequency):
+        if i % frequency == 0:
+            s += string[i]
+    return s
+
+
+main()
