@@ -4,6 +4,7 @@ def main():
     number = get_number(UPPER_LIMIT, LOWER_LIMIT)
     print('The character for {} is {}'.format(number, chr(number)))
 
+
 def get_number(upper, lower):
     finished = False
     while not finished:
