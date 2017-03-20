@@ -1,3 +1,9 @@
+def main():
+    UPPER_LIMIT = 127
+    LOWER_LIMIT = 33
+    number = get_number(UPPER_LIMIT, LOWER_LIMIT)
+    print('The character for {} is {}'.format(number, chr(number)))
+
 def get_number(upper, lower):
     finished = False
     while not finished:
@@ -10,8 +16,5 @@ def get_number(upper, lower):
         except ValueError:
             print('Please enter a number')
 
-UPPER_LIMIT = 127
-LOWER_LIMIT = 33
-number = get_number(UPPER_LIMIT, LOWER_LIMIT)
-print('The character for {} is {}'.format(number, chr(number)))
 
+main()
