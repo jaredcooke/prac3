@@ -1,5 +1,3 @@
-
-
 def main():
     name = get_name()
     string = get_string(name)
